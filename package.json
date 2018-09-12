@@ -1,0 +1,27 @@
+{
+  "name": "reactfundamental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getstart.js",
+  "dependencies": {
+    "react": "^16.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start-js": "react-scripts start",
+    "start": "./node_modules/.bin/npm-run-all -p start-js",
+    "build-js": "react-scripts build",
+    "build": "./node_modules/.bin/npm-run-all build-js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meothailand/ReactFundamental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meothailand/ReactFundamental/issues"
+  },
+  "homepage": "https://github.com/meothailand/ReactFundamental#readme"
+}

@@ -3,13 +3,17 @@ module.exports = {
         './source/App.js'
     ],
     output: {
-        path: __dirname,
+        path: __dirname + '/public',
         filename: 'bundle.js'
     },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
     module: {
-        loader: [{
+        loaders: [{
             test: /\.jsx?$/,
-            loader: 'babel'
+            loader: 'babel',
+            query: { presets: ["es2015", "react"] }
         }]
     }
 };

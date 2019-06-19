@@ -1,0 +1,28 @@
+{
+  "name": "just4fun",
+  "version": "1.0.0",
+  "description": "Just for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.*",
+    "babel-loader": "^5.3.*",
+    "webpack": "^1.12.*",
+    "webpack-dev-server": "^1.10.*"
+  },
+  "dependencies": {
+    "react": "^0.13.*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meothailand/ReactFundamental.git"
+  },
+  "author": "meokokiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meothailand/ReactFundamental/issues"
+  },
+  "homepage": "https://github.com/meothailand/ReactFundamental#readme"
+}

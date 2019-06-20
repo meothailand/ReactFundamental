@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,6 C7.90909091,6 4.41545455,8.488 3,12 C4.41545455,15.512 7.90909091,18 12,18 C16.0909091,18 19.5845455,15.512 21,12 C19.5845455,8.488 16.0909091,6 12,6 Z M12,16 C9.74181818,16 7.90909091,14.208 7.90909091,12 C7.90909091,9.792 9.74181818,8 12,8 C14.2581818,8 16.0909091,9.792 16.0909091,12 C16.0909091,14.208 14.2581818,16 12,16 Z M12,9.6 C10.6418182,9.6 9.54545455,10.672 9.54545455,12 C9.54545455,13.328 10.6418182,14.4 12,14.4 C13.3581818,14.4 14.4545455,13.328 14.4545455,12 C14.4545455,10.672 13.3581818,9.6 12,9.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/eye" transform="translate(-3.000000, -6.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#81878D" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

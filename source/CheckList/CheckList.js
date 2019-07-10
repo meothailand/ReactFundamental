@@ -6,13 +6,13 @@ class CheckList extends Component{
     }
 
     render(){
-        let tasks = this.props.tasks.map((task) => 
-            <li className='checklist-task'>
+        let tasks = this.props.tasks.map((task) => {
+            return <li className='checklist-task'>
                 <input type='checkbox' defaultChecked={task.done} />
                 {task.name}
                 <a href='#' className='checklist_task-remove' />
             </li> 
-        );
+        });
 
         return(
             <div className='checklist'>

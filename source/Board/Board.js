@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import List from '../List/List';
+import List from '../List/List.js';
 
 class Board extends Component{
     constructor(props){
@@ -7,11 +7,14 @@ class Board extends Component{
     }
 
     render(){
+        let todos = this.props.cards.filter((card) => card.status === 'todo');
+        let progresses = this.props.cards.filter((card) => card.status === 'progress');
+        let dones = this.props.cards.filter((card) => card.status === 'done');
         return(
             <div className='app'>
-                <List id='todo' title='To Do' cards={this.props.cards.filter((card) => {card.status === 'todo'})} />
-                <List id='in-progress' title='In Progress' cards={this.props.filter((card) => {card.status === 'progress'})} />
-                <List id='done' title='Done' cards={this.props.cards.filter((card) => {card.status === 'done'})} />
+                <List id='todo' title='To Do' cards={todos} />
+                <List id='in-progress' title='In Progress' cards={progresses} />
+                <List id='done' title='Done' cards={dones} />
             </div>
         );
     }

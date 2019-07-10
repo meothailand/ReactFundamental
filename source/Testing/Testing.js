@@ -8,7 +8,7 @@ class Testing extends Component{
                 <h1>This can be displayed!</h1>
                 <h2>With props: {this.props.name}</h2>
             </div>
-        )
+        );
     }
 }
 

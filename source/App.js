@@ -6,6 +6,7 @@ import {card, task} from './Models/CardModel';
 const randomNumber = require('random-number');
 const options = {min: 1, max: 100, integer: true};
 const cardName = ['Read this book', 'Follow the example', 'Write the project', 'Complete this book', 'Write some code'];
+const cardColor = {progress: '#BD8D31', todo: '#3A7E28', done: '#0107FF'};
 function generateCard(){
     let cards = [];
     let cardItem;   
@@ -16,6 +17,7 @@ function generateCard(){
         cardItem.title = cardName[i];
         cardItem.description = `Description: go to <a href="https://google.com/search?q=mèokokiu+meomeo">Google</a> to read more about this task`;
         cardItem.status = randomNumber(options) % 3 === 0 ? 'done' : randomNumber(options) % 2 === 0 ? 'progress' : 'todo';
+        cardItem.color = cardColor[cardItem.status];
         cardItem.tasks = generateTasks(3);
         cards.push(cardItem);
     }

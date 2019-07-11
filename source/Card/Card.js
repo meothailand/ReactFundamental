@@ -17,6 +17,16 @@ class Card extends Component{
 
     render(){
         let cardDetail;
+        let sideColor = {
+            position: 'absolute',
+            zIndex: -1,
+            top: 0,
+            bottom: 0,
+            left: 0,
+            width: 7,
+            backgroundColor: this.props.color
+        };
+    
         
         if(this.state.showDetail){
             cardDetail = (
@@ -29,6 +39,7 @@ class Card extends Component{
 
         return(
             <div className='card'>
+                <div style={sideColor}></div>
                 <div className={this.state.showDetail ? 'card-title card-title-is-open' : 'card-title'} 
                      onClick={this.toggleDetail}>{this.props.title}</div>
                 {cardDetail}

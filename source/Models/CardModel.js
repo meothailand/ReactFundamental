@@ -4,6 +4,7 @@ export const card = () => {
         title: '',
         description: '',
         status: 'todo',
+        color: '',
         tasks: []
     };
 };
